@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.palmcity.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_bt_hui"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:text="惠" />
+
+        <Button
+            android:id="@+id/main_bt_qi"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:text="企" />
+
+        <Button
+            android:id="@+id/main_bt_mei"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:text="媒" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/ly1"
+        android:layout_above="@+id/ly2"
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    
+    <LinearLayout 
+        android:id="@+id/ly2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/main_bt_gonggong"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:text="公共" />
+
+        <Button
+            android:id="@+id/main_bt_wode"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:text="我的" />
+    </LinearLayout>
+</RelativeLayout>
